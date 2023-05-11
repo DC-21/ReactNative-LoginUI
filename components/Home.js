@@ -10,7 +10,7 @@ const Home = () => {
         <View style={{ marginHorizontal: 60, marginVertical: 40}}>
         <Text style={{ color: 'white', fontSize: 64}}>Welcome</Text>
         </View>
-        <Button bgColor={darkGreen} btnLabel='Log In' textColor='white'/>
+        <Button bgColor={darkGreen} btnLabel='Log In' textColor='white'  press={() =>  { console.log('Button pressed'); }} />
     </Background>
   );
 }
