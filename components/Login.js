@@ -3,6 +3,7 @@ import React from 'react'
 import Background from './Background';
 import { darkGreen } from './Constants';
 import Field from './Field';
+import Button from './Button';
 
 const Login = () => {
   return (
@@ -14,10 +15,16 @@ const Login = () => {
         <Text style={{ fontSize: 20, color: darkGreen, fontWeight: "bold", marginBottom: 20}}>Login to your account</Text>
         <Field placeholder='Email' keyboardType={"email-address"} />
         <Field placeholder='Password' secureTextEntry={true}/>
-        <View>
+        <View style={{alignItems: 'flex-end', width: '68%', paddingRight: 16, marginBottom:80}}>
           <Text style={{color: darkGreen, fontWeight: 'bold', fontSize: 16}}>
             Forgot Password?
           </Text>
+        </View>
+        <Button bgColor={darkGreen} btnLabel='Login' textColor='white' press={() => alert
+        ('Logged In')} />
+        <View style={{ display: 'flex', flexDirection: 'row', justifyContent: "center"}}>
+          <Text>Don't have an account ?</Text>
+          <Text>Signup</Text>
         </View>
       </View>
     </View>
