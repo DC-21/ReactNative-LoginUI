@@ -1,7 +1,7 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-const Signup = () => {
+const Signup = ({ navigation }) => {
   return (
     <View>
       <Text>Signup</Text>
