@@ -9,8 +9,8 @@ const Home = (props) => {
       <Background>
           <View style={{ marginHorizontal: 40, marginVertical: 100 }}>
           <Text style={{ color: 'white', fontSize: 64}}>Welcome</Text>
-          <Button bgColor={darkGreen} btnLabel='Log In' textColor='white'  press={() =>  props.navigation.navigate("Log In")} />
-          <Button bgColor= 'white' btnLabel='Sign Up' textColor={darkGreen}  press={() =>  props.navigation.navigate("Sign Up")} />
+          <Button bgColor={darkGreen} btnLabel='Login' textColor='white'  press={() =>  props.navigation.navigate("Log In")} />
+          <Button bgColor= 'white' btnLabel='Signup' textColor={darkGreen}  press={() =>  props.navigation.navigate("Sign Up")} />
           </View>
       </Background>
     );
