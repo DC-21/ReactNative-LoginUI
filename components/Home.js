@@ -7,8 +7,8 @@ import { darkGreen } from './Constants';
 const Home = (props) => {
     return (
       <Background>
-          <View style={{ marginHorizontal: 40, marginVertical: 100 }}>
-          <Text style={{ color: 'white', fontSize: 64}}>Welcome</Text>
+          <View style={{ marginHorizontal: 50, marginVertical: 100 }}>
+          <Text style={{ color: 'white', fontSize: 64, paddingBottom: 60}}>Welcome</Text>
           <Button bgColor={darkGreen} btnLabel='Login' textColor='white'  press={() =>  props.navigation.navigate("Login")} />
           <Button bgColor= 'white' btnLabel='Signup' textColor={darkGreen}  press={() =>  props.navigation.navigate("Signup")} />
           </View>
